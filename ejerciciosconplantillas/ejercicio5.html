@@ -1,56 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Agencia de Viajes Mundo Aventura</title>
+<title>Mundo Aventura - Esquí en Masella</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-h1,h2,h3 {font-family: "Oswald"}
-body {font-family: Arial, sans-serif}
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+.w3-sky {background-color:#2196F3!important;color:white!important}
 </style>
 </head>
 <body class="w3-light-grey">
 
-<header class="w3-container w3-blue w3-center w3-padding-32">
-  <h1><b>MUNDO AVENTURA</b></h1>
-  <p>Tu agencia de viajes de confianza</p>
-</header>
+<!-- Barra de navegación -->
+<div class="w3-bar w3-sky w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snowflake-o"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- Contenido principal -->
+<div class="w3-content" style="max-width:1600px">
 
-<div class="w3-content" style="max-width:1000px">
+  <!-- Encabezado -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>MUNDO AVENTURA</b></h1>
+    <h6>Especialistas en viajes de <span class="w3-tag w3-sky">esquí en Masella</span></h6>
+  </header>
 
-<div class="w3-card-4 w3-margin w3-white">
-  <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris" style="width:100%">
-  <div class="w3-container">
-    <h3><b>París, la ciudad del amor</b></h3>
-    <h5>5 días / 4 noches — <span class="w3-tag w3-blue">599€</span></h5>
-    <p>Disfruta de la Torre Eiffel, el Louvre y un paseo por el Sena. Incluye vuelo y hotel 4★ con desayuno.</p>
+  <!-- Imagen principal -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="https://www.masella.com/media/filer_public_thumbnails/filer_public/5a/a9/5aa9d1cb-d315-4cc4-a42d-3cbf0b379379/masella_panorama.jpg__1200x630_q85_subject_location-1006%2C355_subsampling-2.jpg" alt="Masella" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white w3-xxxlarge"><b>MASSELLA</b></h1>
+      <h3 class="w3-text-white">Esquí, nieve y aventura</h3>
+      <h6><button class="w3-button w3-white w3-padding-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">RESERVA AHORA</button></h6>
+    </div>
+  </header>
+
+  <!-- Contenido en columnas -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Entradas principales -->
+    <div class="w3-col l8 s12">
+
+      <!-- Oferta 1 -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>PACK FIN DE SEMANA</h3>
+          <h5>2 noches + Forfait incluido <span class="w3-opacity">desde 180€</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="https://www.masella.com/media/filer_public_thumbnails/filer_public/61/55/61550931-312d-4ab3-b1f1-ec35ef36e022/masella_pistas.jpg__800x600_q85_subsampling-2.jpg" alt="Masella esquí" style="width:100%" class="w3-padding-16">
+          <p><strong>Disfruta de un fin de semana perfecto</strong> con acceso ilimitado a las pistas de Masella, una de las mejores estaciones del Pirineo Catalán. El paquete incluye alojamiento, desayuno y forfait para ambos días.</p>
+          <p>Ideal para parejas y familias que buscan desconectar en plena naturaleza. ¡La nieve te espera!</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border"><b><i class="fa fa-thumbs-up"></i> Me gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-sky"><b>Detalles</b></button></p>
+          <p class="w3-clear"></p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Oferta 2 -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>PACK SEMANA BLANCA</h3>
+          <h5>5 noches + clases de esquí <span class="w3-opacity">desde 450€</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="https://www.masella.com/media/filer_public_thumbnails/filer_public/c2/03/c203dc37-351e-4ad5-96b1-4c4dbbcd08d2/esqui_familia.jpg__800x600_q85_subsampling-2.jpg" alt="Masella familia" style="width:100%" class="w3-padding-16">
+          <p><strong>Una semana completa de nieve y diversión.</strong> Incluye alojamiento en hotel 3★, desayuno y cena, forfait de 5 días y clases diarias de esquí o snowboard con monitores titulados.</p>
+          <p>Perfecto para principiantes y familias que quieren aprender y disfrutar de la montaña.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border"><b><i class="fa fa-thumbs-up"></i> Me gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-sky"><b>Detalles</b></button></p>
+          <p class="w3-clear"></p>
+        </div>
+      </div>
+
+      <!-- Oferta 3 -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>PACK NOCHE Y ESQUÍ NOCTURNO</h3>
+          <h5>1 noche + esquí nocturno <span class="w3-opacity">desde 95€</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="https://www.masella.com/media/filer_public_thumbnails/filer_public/1e/60/1e607bd5-8d28-4671-94ab-41b20f9f1a6b/masella_nocturno.jpg__800x600_q85_subsampling-2.jpg" alt="Esquí nocturno Masella" style="width:100%" class="w3-padding-16">
+          <p><strong>Vive la experiencia única del esquí nocturno en Masella.</strong> La estación ofrece la mayor superficie esquiable iluminada del Pirineo. Disfruta de una noche de adrenalina bajo las estrellas.</p>
+          <p>Incluye alojamiento, cena y forfait nocturno. ¡Ideal para aventureros!</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border"><b><i class="fa fa-thumbs-up"></i> Me gusta</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-sky"><b>Detalles</b></button></p>
+          <p class="w3-clear"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna lateral -->
+    <div class="w3-col l4">
+
+      <!-- Acerca de -->
+      <div class="w3-white w3-margin">
+        <img src="https://cdn-icons-png.flaticon.com/512/3061/3061169.png" alt="Logo agencia" style="width:100px" class="w3-margin w3-circle">
+        <div class="w3-container w3-sky">
+          <h4>Mundo Aventura</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Somos una agencia especializada en escapadas de nieve. Organizamos viajes de esquí en Masella, La Molina y Andorra, con alojamiento, transporte y clases incluidas.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Post populares -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-sky">
+          <h4>Ofertas populares</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="https://www.masella.com/media/filer_public_thumbnails/filer_public/8c/d0/8cd01154-4a09-4d2d-a701-bbb4e7df3b1c/masella_panoramica.jpg__800x600_q85_subsampling-2.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Masella Express</span><br>
+            <span>1 día con forfait</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="https://www.masella.com/media/filer_public_thumbnails/filer_public/61/55/61550931-312d-4ab3-b1f1-ec35ef36e022/masella_pistas.jpg__800x600_q85_subsampling-2.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Escapada Familiar</span><br>
+            <span>2 noches + clases</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="https://www.masella.com/media/filer_public_thumbnails/filer_public/1e/60/1e607bd5-8d28-4671-94ab-41b20f9f1a6b/masella_nocturno.jpg__800x600_q85_subsampling-2.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Nocturno</span><br>
+            <span>Una noche mágica</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Suscripción -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-sky">
+          <h4>Suscríbete</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Recibe nuestras ofertas y escapadas en la nieve.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Introduce tu e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-sky">Suscribirme</button></p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="w3-card-4 w3-margin w3-white">
-  <img src="https://images.unsplash.com/photo-1543248939-ec7e1a4d651f" alt="Safari" style="width:100%">
-  <div class="w3-container">
-    <h3><b>Safari en Kenia</b></h3>
-    <h5>7 días / 6 noches — <span class="w3-tag w3-blue">999€</span></h5>
-    <p>Vive una experiencia única viendo leones, jirafas y elefantes en su hábitat natural. Alojamiento en lodge y guía local incluido.</p>
+<!-- Modal de suscripción -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUSCRÍBETE</h2>
+      <p>Recibe nuestras últimas ofertas de esquí en Masella directamente en tu correo.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Introduce tu e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-sky w3-padding-large w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Enviar</button>
+    </div>
   </div>
 </div>
 
-<div class="w3-card-4 w3-margin w3-white">
-  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldivas" style="width:100%">
-  <div class="w3-container">
-    <h3><b>Islas Maldivas</b></h3>
-    <h5>8 días / 7 noches — <span class="w3-tag w3-blue">1299€</span></h5>
-    <p>Relájate en playas paradisíacas con aguas turquesas. Incluye vuelos, resort de lujo y actividades acuáticas.</p>
-  </div>
-</div>
-
-<footer class="w3-container w3-dark-grey w3-padding-16 w3-center">
-  <p>© 2025 Mundo Aventura | Inspirado en <a href="https://www.w3schools.com/w3css/" target="_blank">W3.CSS</a></p>
+<!-- Pie -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-sky w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Subir</a>
+  <p>© 2025 Mundo Aventura - Esquí en Masella | Basado en plantilla de <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a></p>
 </footer>
 
-</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Me gusta";
+}
+</script>
+
 </body>
 </html>
