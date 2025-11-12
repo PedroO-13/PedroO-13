@@ -1,48 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Blog de Spider-Man</title>
+<title>El Blog de Spider-Man</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-red-spidey {background-color:#c70000 !important;}
+.w3-blue-spidey {color:#fff;background-color:#0b3d91 !important;}
 </style>
 </head>
 <body class="w3-light-grey">
 
-<div class="w3-content" style="max-width:1000px">
+<!-- Contenedor principal -->
+<div class="w3-content" style="max-width:1400px">
 
-<header class="w3-container w3-center w3-padding-32 w3-red"> 
+<!-- Cabecera -->
+<header class="w3-container w3-center w3-padding-32 w3-red-spidey"> 
   <h1><b>EL BLOG DE SPIDER-MAN</b></h1>
-  <p>Escrito por <span class="w3-tag w3-black">Peter Parker</span></p>
+  <p>Tu amistoso vecino: <span class="w3-tag w3-black">Peter Parker</span></p>
 </header>
 
-<div class="w3-card-4 w3-margin w3-white">
-  <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg" alt="Spider-Man" style="width:100%">
-  <div class="w3-container">
-    <h3><b>El origen del héroe</b></h3>
-    <h5><span class="w3-opacity">15 de marzo de 2025</span></h5>
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Columna principal del blog -->
+<div class="w3-col l8 s12">
+
+  <!-- Entrada 1 -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Spiderman50.jpg" alt="Spider-Man" style="width:100%">
+    <div class="w3-container">
+      <h3><b>El origen de Spider-Man</b></h3>
+      <h5>Por Peter Parker, <span class="w3-opacity">15 Marzo 2025</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Todo comenzó con una picadura de araña radiactiva en una excursión científica. Desde ese día, mi vida cambió para siempre. Ser Spider-Man no solo es tener poderes: es una responsabilidad.</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>LEER MÁS »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comentarios </b> <span class="w3-tag w3-blue-spidey">3</span></span></p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="w3-container">
-    <p>Todo empezó con una picadura de araña. Desde entonces, he aprendido que con gran poder viene una gran responsabilidad. Este blog es mi forma de compartir mis aventuras y pensamientos.</p>
+  <hr>
+
+  <!-- Entrada 2 -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Green_Goblin_%28Norman_Osborn%29.png" alt="Green Goblin" style="width:100%">
+    <div class="w3-container">
+      <h3><b>El Duende Verde vuelve a atacar</b></h3>
+      <h5>Noticias desde Manhattan, <span class="w3-opacity">1 Abril 2025</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Norman Osborn ha regresado. Su locura amenaza de nuevo a toda la ciudad. Pero no lucharé solo: mis amigos y aliados están listos para actuar. ¡El bien siempre triunfa!</p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>LEER MÁS »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b>Comentarios </b> <span class="w3-tag w3-blue-spidey">5</span></span></p>
+        </div>
+      </div>
+    </div>
   </div>
+<!-- Fin columna principal -->
 </div>
 
-<div class="w3-card-4 w3-margin w3-white">
-  <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Green_Goblin_%28Norman_Osborn%29.png" alt="Duende Verde" style="width:100%">
-  <div class="w3-container">
-    <h3><b>El Duende Verde ataca de nuevo</b></h3>
-    <h5><span class="w3-opacity">1 de abril de 2025</span></h5>
+<!-- Barra lateral -->
+<div class="w3-col l4">
+
+  <!-- Sobre mí -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Tobey_Maguire_as_Spider-Man.png" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Peter Parker</b></h4>
+      <p>Fotógrafo, estudiante y héroe enmascarado. En este blog comparto mis historias, reflexiones y consejos para ser un héroe... sin dejar de ser humano.</p>
+    </div>
+  </div><hr>
+
+  <!-- Enemigos -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding w3-red-spidey">
+      <h4>Enemigos frecuentes</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/99/Venom_%28Eddie_Brock%29.png" alt="Venom" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Venom</span><br>
+        <span>El simbionte vengativo</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Doctor_Octopus_%28Marvel_Comics_character%29.jpg" alt="Doc Ock" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Doctor Octopus</span><br>
+        <span>Genio de los tentáculos</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0b/Sandman1.png" alt="Sandman" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Sandman</span><br>
+        <span>El hombre de arena</span>
+      </li>   
+    </ul>
   </div>
-  <div class="w3-container">
-    <p>Norman Osborn está de vuelta. Su locura pone en peligro a toda Nueva York. Pero mientras haya peligro, Spider-Man estará ahí para proteger a todos.</p>
+  <hr> 
+ 
+  <!-- Temas -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding w3-blue-spidey">
+      <h4>Temas</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Héroes</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Marvel</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Nueva York</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Villanos</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Cómics</span>
+    </p>
+    </div>
   </div>
+
+<!-- Fin barra lateral -->
 </div>
 
-<footer class="w3-container w3-dark-grey w3-padding-16 w3-center">
-  <p>© 2025 Blog de Spider-Man | Inspirado en <a href="https://www.w3schools.com/w3css/" target="_blank">W3.CSS</a></p>
+<!-- Fin grid -->
+</div><br>
+
+<!-- Pie de página -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Anterior</button>
+  <button class="w3-button w3-blue-spidey w3-padding-large w3-margin-bottom">Siguiente »</button>
+  <p>© 2025 Blog de Spider-Man — Basado en <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS Blog Template</a></p>
 </footer>
 
 </div>
