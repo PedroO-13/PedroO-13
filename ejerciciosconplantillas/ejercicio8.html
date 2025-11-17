@@ -5,29 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IlloJuan Página Fan</title>
 
-    <!-- Estilos internos solicitados -->
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #e9f5ff; /* color suave */
+            background-color: #e9f5ff;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
 
         h1 {
-            color: #1a73e8; /* color distinto para el título */
+            color: #1a73e8;
+            text-align: center;
+            padding: 20px 0;
         }
 
-        .texto {
-            margin-top: 15px;
-            font-family: "Georgia", serif; /* nueva fuente */
-            font-size: 24px; /* tamaño más grande */
-        }
-
-        img {
-            width: 300px;
+        /* Estilos generales para secciones */
+        section {
+            padding: 40px 20px;
+            margin: 20px;
             border-radius: 10px;
+        }
+
+        /* Sección INICIO */
+        #inicio {
+            background-color: #ffffff;
+            border-left: 6px solid #1a73e8;
+        }
+
+        /* Sección SOBRE MÍ */
+        #sobre-mi {
+            background-color: #dff1ff;
+            border-left: 6px solid #3b89ff;
+        }
+
+        /* Sección GALERÍA */
+        #galeria {
+            background-color: #cfe8ff;
+            border-left: 6px solid #1967d2;
+        }
+
+        /* Texto */
+        p {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Imágenes con sombra y borde */
+        .img-estilo {
+            width: 300px;
+            border-radius: 12px;
+            border: 3px solid #ffffff;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            display: block;
+            margin: 15px auto;
         }
     </style>
 </head>
@@ -35,13 +66,26 @@
 
     <h1>IlloJuan</h1>
 
-    <!-- Imagen de IlloJuan -->
-    <img src="imagenes/illojuan" alt="IlloJuan">
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenido a esta página fan dedicada a IlloJuan, un creador de contenido conocido por su humor incomparable.</p>
+        <img src="imagenes/inicio.jpg" alt="Inicio IlloJuan" class="img-estilo">
+    </section>
 
-    <!-- Texto debajo -->
-    <div class="texto">
-        IlloJuan es uno de los streamers más queridos por su humor, su cercanía y su estilo único.
-    </div>
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>IlloJuan ha construido una comunidad fiel gracias a su cercanía, naturalidad y estilo único dentro del streaming.</p>
+        <img src="imagenes/sobre-mi.jpg" alt="Sobre IlloJuan" class="img-estilo">
+    </section>
+
+    <!-- SECCIÓN GALERÍA -->
+    <section id="galeria">
+        <h2>Galería</h2>
+        <p>Aquí puedes ver algunas imágenes destacadas que muestran momentos icónicos del streamer.</p>
+        <img src="imagenes/galeria1.jpg" alt="Galería IlloJuan" class="img-estilo">
+    </section>
 
 </body>
 </html>
