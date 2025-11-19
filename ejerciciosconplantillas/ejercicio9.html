@@ -70,7 +70,7 @@
         .btn {
             margin-top: 20px;
             padding: 12px 25px;
-            background: #6EC6FF; /* azul clarito */
+            background: #6EC6FF;
             color: #fff;
             border: none;
             cursor: pointer;
@@ -81,7 +81,7 @@
         }
 
         .btn:hover {
-            background: #4EADE8; /* azul clarito más oscuro */
+            background: #4EADE8;
         }
 
         /* ----------- SOBRE MÍ ----------- */
@@ -94,8 +94,8 @@
         }
 
         #sobre-mi img {
-            width: 280px;
-            height: 280px;
+            width: 300px;
+            height: 300px;
             object-fit: cover;
             border-radius: 50%;
         }
@@ -176,25 +176,23 @@
             height: 120px;
         }
 
-        /* ----------- FOOTER ----------- */
+        /* ----------- FOOTER SIMPLE ----------- */
         footer {
             background: #111;
             color: #ddd;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             margin-top: 40px;
         }
 
-        .social-icons img {
-            width: 28px;
+        footer a {
+            color: #6EC6FF;
+            text-decoration: none;
             margin: 0 10px;
-            filter: invert(1);
-            cursor: pointer;
-            transition: .3s;
         }
 
-        .social-icons img:hover {
-            transform: scale(1.2);
+        footer a:hover {
+            text-decoration: underline;
         }
 
         /* ----------- RESPONSIVE ----------- */
@@ -227,14 +225,14 @@
 
 <!-- ---------------------- SOBRE MÍ ---------------------- -->
 <section id="sobre-mi">
-    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=60" alt="Foto personal">
+    <!-- FOTO DE HOMBRE -->
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=60" alt="Foto hombre">
 
     <div class="about-text">
         <h2>Sobre mí</h2>
         <p>
-            Soy Pedro, un desarrollador web apasionado por crear experiencias digitales modernas,
-            funcionales y visualmente atractivas. Me especializo en frontend, diseño UI/UX
-            y optimización para dispositivos móviles.
+            Soy Pedro, un desarrollador web apasionado por crear experiencias modernas,
+            funcionales y visualmente atractivas. Me especializo en frontend, UI/UX y diseño responsivo.
         </p>
 
         <h3>Habilidades</h3>
@@ -258,7 +256,7 @@
             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60">
             <div class="card-content">
                 <h3>Dashboard Web</h3>
-                <p>Interfaz moderna para visualización de datos y reportes.</p>
+                <p>Interfaz moderna para manejo de datos.</p>
                 <a class="btn" href="#">Ver más</a>
             </div>
         </div>
@@ -267,7 +265,7 @@
             <img src="https://images.unsplash.com/photo-1559027615-ce3b53cba78c?auto=format&fit=crop&w=800&q=60">
             <div class="card-content">
                 <h3>E-commerce UI</h3>
-                <p>Diseño de tienda digital con experiencia intuitiva.</p>
+                <p>Diseño intuitivo para tiendas online.</p>
                 <a class="btn" href="#">Ver más</a>
             </div>
         </div>
@@ -276,7 +274,7 @@
             <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=60">
             <div class="card-content">
                 <h3>Landing Page</h3>
-                <p>Página de presentación optimizada para conversiones.</p>
+                <p>Página enfocada en conversiones.</p>
                 <a class="btn" href="#">Ver más</a>
             </div>
         </div>
@@ -284,8 +282,8 @@
         <div class="card">
             <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=800&q=60">
             <div class="card-content">
-                <h3>App de Productividad</h3>
-                <p>Aplicación móvil para gestión de tareas y rutinas.</p>
+                <h3>App de Tareas</h3>
+                <p>Aplicación para productividad personal.</p>
                 <a class="btn" href="#">Ver más</a>
             </div>
         </div>
@@ -305,13 +303,14 @@
     </form>
 </section>
 
-<!-- ---------------------- FOOTER ---------------------- -->
+<!-- ---------------------- FOOTER SIMPLE ---------------------- -->
 <footer>
-    <div class="social-icons">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
-    </div>
+    <p>Sígueme en redes:</p>
+    <p>
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">GitHub</a>
+    </p>
     <p>© 2025 Pedro. Todos los derechos reservados.</p>
 </footer>
 
