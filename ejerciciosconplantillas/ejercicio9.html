@@ -1,287 +1,264 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Pedro - Estudiante 4º ESO</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-            color: #333;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0,0,0,0.7);
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        header a.logo {
-            color: #fff;
-            font-size: 26px;
-            font-weight: 700;
-            text-decoration: none;
-        }
-
-        nav a {
-            color: #fff;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        nav a:hover {
-            color: #6EC6FF;
-        }
-
-        .hero {
-            height: 100vh;
-            background: url('https://i.imgur.com/GG3bG4H.jpeg') center/cover no-repeat;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            color: #fff;
-            font-size: 60px;
-            margin: 0;
-        }
-
-        .hero p {
-            color: #ddd;
-            font-size: 22px;
-            margin-top: 10px;
-        }
-
-        .btn {
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #6EC6FF;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            background: #4EADE8;
-        }
-
-        #sobre-mi {
-            padding: 80px 40px;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 40px;
-        }
-
-        #sobre-mi img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .about-text {
-            max-width: 600px;
-        }
-
-        .skills span {
-            display: inline-block;
-            padding: 6px 15px;
-            background: #6EC6FF;
-            color: #fff;
-            border-radius: 20px;
-            margin: 5px;
-        }
-
-        #portafolio {
-            padding: 80px 40px;
-            background: #f7f7f7;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform .3s;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        #contacto {
-            padding: 80px 40px;
-        }
-
-        form {
-            max-width: 500px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        input, textarea {
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        textarea {
-            resize: vertical;
-            height: 120px;
-        }
-
-        footer {
-            background: #000;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            font-size: 15px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfolio Pedro - Estudiante 4º ESO</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  header a.logo {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav a:hover {
+    color: #6EC6FF;
+  }
+  .hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 0;
+  }
+  .hero p {
+    color: #ddd;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  .btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #6EC6FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn:hover {
+    background: #4EADE8;
+  }
+  #sobre-mi {
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  #sobre-mi img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .about-text h2 {
+    margin-top: 0;
+  }
+  .skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .skills span {
+    background: #6EC6FF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  #portafolio {
+    padding: 80px 40px;
+    background: #f7f7f7;
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+  }
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform .3s;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .card-content {
+    padding: 20px;
+  }
+  #contacto {
+    padding: 80px 40px;
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    resize: vertical;
+  }
+  textarea {
+    min-height: 100px;
+  }
+  footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
+  }
+  @media(max-width:600px){
+    #sobre-mi {
+      flex-direction: column;
+      text-align: center;
+    }
+    #sobre-mi img {
+      margin: 0 auto;
+    }
+    .skills {
+      justify-content: center;
+    }
+  }
+</style>
 </head>
-
 <body>
 
 <header>
-    <a href="#" class="logo">Pedro</a>
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#portafolio">Portafolio</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+  <a href="#" class="logo">Pedro</a>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#portafolio">Portafolio</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 </header>
 
 <section class="hero" id="inicio">
-    <h1>Pedro</h1>
-    <p>Estudiante de 4º de ESO | Tecnología | Proyectos Escolares</p>
-    <a class="btn" href="#portafolio">Ver Portafolio</a>
+  <h1>Pedro</h1>
+  <p>Estudiante de 4º de ESO | Tecnología | Proyectos Escolares</p>
+  <a class="btn" href="#portafolio">Ver Portafolio</a>
 </section>
 
-<!-- -------------------- SOBRE MÍ -------------------- -->
 <section id="sobre-mi">
-
-    <!-- FOTO ADOLESCENTE QUE SÍ CARGA -->
-    <img src="https://i.pravatar.cc/300?img=15" alt="Estudiante adolescente">
-
-    <div class="about-text">
-        <h2>Sobre mí</h2>
-        <p>
-            Soy Pedro, tengo 15 años y estudio 4º de ESO. Me gusta la informática,
-            la tecnología, el diseño digital y crear proyectos para clase. Me encanta
-            aprender cosas nuevas y mejorar cada día.
-        </p>
-
-        <h3>Habilidades</h3>
-        <div class="skills">
-            <span>HTML básico</span>
-            <span>Presentaciones</span>
-            <span>Scratch</span>
-            <span>Canva</span>
-            <span>Trabajo en equipo</span>
-        </div>
+  <img src="/mnt/data/IMG_20251119_104015.jpg" alt="Foto de perfil" />
+  <div class="about-text">
+    <h2>Sobre mí</h2>
+    <p>
+      Hola, soy Pedro. Tengo 15 años y estudio 4º de ESO. Me apasiona la tecnología,
+      la informática, crear presentaciones y hacer proyectos creativos para clase.
+    </p>
+    <h3>Habilidades</h3>
+    <div class="skills">
+      <span>HTML básico</span>
+      <span>Scratch</span>
+      <span>Presentaciones</span>
+      <span>Canva</span>
+      <span>Trabajo en equipo</span>
     </div>
+  </div>
 </section>
 
-<!-- -------------------- PORTAFOLIO -------------------- -->
 <section id="portafolio">
-    <h2 style="text-align:center; margin-bottom:40px;">Mis Proyectos</h2>
+  <h2 style="text-align:center; margin-bottom:40px;">Mis Proyectos</h2>
+  <div class="portfolio-grid">
 
-    <div class="portfolio-grid">
-
-        <!-- Proyecto 1 -->
-        <div class="card">
-            <img src="https://i.imgur.com/oQYjGq6.jpeg" alt="Proyecto ciencias">
-            <div class="card-content">
-                <h3>Trabajo de Ciencias</h3>
-                <p>Proyecto sobre energías renovables con gráficos e investigación.</p>
-                <a class="btn" href="#">Ver más</a>
-            </div>
-        </div>
-
-        <!-- Proyecto 2 -->
-        <div class="card">
-            <img src="https://i.imgur.com/EgYdFKG.jpeg" alt="Historia ESO">
-            <div class="card-content">
-                <h3>Presentación de Historia</h3>
-                <p>Trabajo sobre la Edad Media con línea del tiempo y mapas.</p>
-                <a class="btn" href="#">Ver más</a>
-            </div>
-        </div>
-
-        <!-- Proyecto 3 -->
-        <div class="card">
-            <img src="https://i.imgur.com/Yxd7Zqd.jpeg" alt="Juego Scratch">
-            <div class="card-content">
-                <h3>Juego en Scratch</h3>
-                <p>Mini juego de plataformas programado en clase de Tecnología.</p>
-                <a class="btn" href="#">Ver más</a>
-            </div>
-        </div>
-
-        <!-- Proyecto 4 -->
-        <div class="card">
-            <img src="https://i.imgur.com/bno9RYU.jpeg" alt="Cartel Canva">
-            <div class="card-content">
-                <h3>Cartel en Canva</h3>
-                <p>Diseño de un cartel promocional para un evento del colegio.</p>
-                <a class="btn" href="#">Ver más</a>
-            </div>
-        </div>
-
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581091870622-4c02e1d68a3b?auto=format&fit=crop&w=900&q=80" alt="Energías renovables" />
+      <div class="card-content">
+        <h3>Trabajo de Ciencias</h3>
+        <p>Investigación sobre energías renovables con gráficos e imágenes.</p>
+        <a class="btn" href="#">Ver más</a>
+      </div>
     </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=900&q=80" alt="Historia" />
+      <div class="card-content">
+        <h3>Presentación de Historia</h3>
+        <p>Presentación sobre la Edad Media con línea del tiempo y mapas.</p>
+        <a class="btn" href="#">Ver más</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Scratch_cat.png" alt="Scratch" />
+      <div class="card-content">
+        <h3>Juego en Scratch</h3>
+        <p>Juego de plataformas creado en clase de Tecnología.</p>
+        <a class="btn" href="#">Ver más</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587809362945-d1325d0e1083?auto=format&fit=crop&w=900&q=80" alt="Diseño Canva" />
+      <div class="card-content">
+        <h3>Cartel en Canva</h3>
+        <p>Cartel escolar diseñado para un evento del colegio.</p>
+        <a class="btn" href="#">Ver más</a>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <section id="contacto">
-    <h2 style="text-align:center; margin-bottom:40px;">Contacto</h2>
-
-    <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo" required>
-        <textarea placeholder="Mensaje" required></textarea>
-        <button class="btn" type="submit">Enviar</button>
-    </form>
+  <h2 style="text-align:center; margin-bottom:40px;">Contacto</h2>
+  <form>
+    <input type="text" placeholder="Nombre" required />
+    <input type="email" placeholder="Correo" required />
+    <textarea placeholder="Mensaje" required></textarea>
+    <button class="btn" type="submit">Enviar</button>
+  </form>
 </section>
 
 <footer>
-    © 2025 Pedro — Estudiante de 4º ESO
+  © 2025 Pedro — Estudiante de 4º ESO
 </footer>
 
 </body>
