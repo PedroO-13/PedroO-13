@@ -6,7 +6,6 @@
     <title>Portfolio Pedro</title>
 
     <style>
-        /* ----------- ESTILOS GENERALES ----------- */
         body {
             margin: 0;
             font-family: "Poppins", sans-serif;
@@ -40,10 +39,9 @@
         }
 
         nav a:hover {
-            color: #6EC6FF; /* azul clarito */
+            color: #6EC6FF;
         }
 
-        /* ----------- SECCIÓN INICIO ----------- */
         .hero {
             height: 100vh;
             background: url('https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
@@ -84,7 +82,6 @@
             background: #4EADE8;
         }
 
-        /* ----------- SOBRE MÍ ----------- */
         #sobre-mi {
             padding: 80px 40px;
             display: flex;
@@ -113,7 +110,6 @@
             margin: 5px;
         }
 
-        /* ----------- PORTAFOLIO ----------- */
         #portafolio {
             padding: 80px 40px;
             background: #f7f7f7;
@@ -147,11 +143,6 @@
             padding: 20px;
         }
 
-        .card-content h3 {
-            margin: 0 0 10px;
-        }
-
-        /* ----------- CONTACTO ----------- */
         #contacto {
             padding: 80px 40px;
         }
@@ -176,36 +167,19 @@
             height: 120px;
         }
 
-        /* ----------- FOOTER SIMPLE ----------- */
+        /* FOOTER SIMPLE */
         footer {
-            background: #111;
-            color: #ddd;
+            background: #000;
+            color: white;
             text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #6EC6FF;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* ----------- RESPONSIVE ----------- */
-        @media(max-width: 768px) {
-            .hero h1 { font-size: 42px; }
-            .hero p { font-size: 18px; }
+            padding: 25px;
+            font-size: 15px;
         }
     </style>
 </head>
 
 <body>
 
-<!-- ---------------------- HEADER ---------------------- -->
 <header>
     <a href="#" class="logo">Pedro</a>
     <nav>
@@ -216,7 +190,6 @@
     </nav>
 </header>
 
-<!-- ---------------------- INICIO ---------------------- -->
 <section class="hero" id="inicio">
     <h1>Pedro</h1>
     <p>Desarrollador Web | Frontend | UI/UX</p>
@@ -225,14 +198,14 @@
 
 <!-- ---------------------- SOBRE MÍ ---------------------- -->
 <section id="sobre-mi">
-    <!-- FOTO DE HOMBRE -->
-    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=60" alt="Foto hombre">
+    <!-- FOTO DE HOMBRE MUCHO MÁS CLARA -->
+    <img src="https://images.unsplash.com/photo-1600181952037-6f3a78f1f40a?auto=format&fit=crop&w=800&q=80" alt="Foto de hombre profesional">
 
     <div class="about-text">
         <h2>Sobre mí</h2>
         <p>
-            Soy Pedro, un desarrollador web apasionado por crear experiencias modernas,
-            funcionales y visualmente atractivas. Me especializo en frontend, UI/UX y diseño responsivo.
+            Soy Pedro, un desarrollador web enfocado en crear interfaces modernas,
+            rápidas y visualmente atractivas. Trabajo con frontend, UX y diseño responsivo.
         </p>
 
         <h3>Habilidades</h3>
@@ -241,7 +214,7 @@
             <span>CSS</span>
             <span>JavaScript</span>
             <span>React</span>
-            <span>Figma</span>
+            <span>UI/UX</span>
         </div>
     </div>
 </section>
@@ -256,7 +229,7 @@
             <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60">
             <div class="card-content">
                 <h3>Dashboard Web</h3>
-                <p>Interfaz moderna para manejo de datos.</p>
+                <p>Interfaz moderna para análisis de datos.</p>
                 <a class="btn" href="#">Ver más</a>
             </div>
         </div>
@@ -265,7 +238,7 @@
             <img src="https://images.unsplash.com/photo-1559027615-ce3b53cba78c?auto=format&fit=crop&w=800&q=60">
             <div class="card-content">
                 <h3>E-commerce UI</h3>
-                <p>Diseño intuitivo para tiendas online.</p>
+                <p>Diseño optimizado para ventas digitales.</p>
                 <a class="btn" href="#">Ver más</a>
             </div>
         </div>
@@ -274,7 +247,7 @@
             <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=60">
             <div class="card-content">
                 <h3>Landing Page</h3>
-                <p>Página enfocada en conversiones.</p>
+                <p>Perfecta para captar clientes o usuarios.</p>
                 <a class="btn" href="#">Ver más</a>
             </div>
         </div>
@@ -283,7 +256,7 @@
             <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=800&q=60">
             <div class="card-content">
                 <h3>App de Tareas</h3>
-                <p>Aplicación para productividad personal.</p>
+                <p>Aplicación móvil para productividad.</p>
                 <a class="btn" href="#">Ver más</a>
             </div>
         </div>
@@ -305,13 +278,7 @@
 
 <!-- ---------------------- FOOTER SIMPLE ---------------------- -->
 <footer>
-    <p>Sígueme en redes:</p>
-    <p>
-        <a href="#">Instagram</a> |
-        <a href="#">LinkedIn</a> |
-        <a href="#">GitHub</a>
-    </p>
-    <p>© 2025 Pedro. Todos los derechos reservados.</p>
+    © 2025 Pedro — Portfolio personal
 </footer>
 
 </body>
