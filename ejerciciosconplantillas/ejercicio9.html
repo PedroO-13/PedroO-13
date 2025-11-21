@@ -4,38 +4,87 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Portfolio Pedro - Estudiante 4º ESO</title>
+
 <style>
   body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     color: #333;
+    scroll-behavior: smooth;
   }
+
+  /* HEADER */
   header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.8);
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    transition: background .3s;
   }
+
+  header.scrolled {
+    background: rgba(0,0,0,0.9);
+  }
+
   header a.logo {
     color: #fff;
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 700;
     text-decoration: none;
   }
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
   nav a {
     color: #fff;
-    margin-left: 20px;
     text-decoration: none;
     font-weight: 500;
+    transition: color .2s;
   }
+
   nav a:hover {
     color: #6EC6FF;
   }
+
+  /* MOBILE MENU */
+  .menu-btn {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (max-width: 700px) {
+    nav {
+      display: none;
+      flex-direction: column;
+      background: rgba(0,0,0,0.9);
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 200px;
+      padding: 20px;
+      border-radius: 10px 0 0 10px;
+    }
+
+    nav.show {
+      display: flex;
+    }
+
+    .menu-btn {
+      display: block;
+    }
+  }
+
+  /* HERO */
   .hero {
     height: 100vh;
     background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
@@ -44,17 +93,22 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: fadeIn 1.5s ease-out;
   }
+
   .hero h1 {
     color: #fff;
     font-size: 60px;
     margin: 0;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.4);
   }
+
   .hero p {
     color: #ddd;
     font-size: 22px;
     margin-top: 10px;
   }
+
   .btn {
     margin-top: 20px;
     padding: 12px 25px;
@@ -66,86 +120,87 @@
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
+    transition: transform .2s, background .2s;
   }
+
   .btn:hover {
     background: #4EADE8;
+    transform: scale(1.05);
   }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  /* SOBRE MI */
   #sobre-mi {
-    padding: 80px 40px;
+    padding: 100px 40px;
     display: flex;
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
   }
+
   #sobre-mi img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   }
-  .about-text h2 {
-    margin-top: 0;
-  }
-  .skills {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
+
   .skills span {
     background: #6EC6FF;
     color: #fff;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 5px;
     font-size: 14px;
+    transition: transform .2s;
   }
+
+  .skills span:hover {
+    transform: scale(1.1);
+  }
+
+  /* PORTAFOLIO */
   #portafolio {
-    padding: 80px 40px;
+    padding: 100px 40px;
     background: #f7f7f7;
   }
+
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 30px;
   }
+
   .card {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform .3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform .3s, box-shadow .3s;
   }
+
   .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
   }
+
   .card img {
     width: 100%;
     height: 180px;
     object-fit: cover;
   }
-  .card-content {
-    padding: 20px;
-  }
+
+  /* CONTACTO */
   #contacto {
-    padding: 80px 40px;
+    padding: 100px 40px;
   }
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  input, textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    resize: vertical;
-  }
-  textarea {
-    min-height: 100px;
-  }
+
   footer {
     background: #000;
     color: white;
@@ -153,25 +208,16 @@
     padding: 25px;
     font-size: 15px;
   }
-  @media(max-width:600px){
-    #sobre-mi {
-      flex-direction: column;
-      text-align: center;
-    }
-    #sobre-mi img {
-      margin: 0 auto;
-    }
-    .skills {
-      justify-content: center;
-    }
-  }
+
 </style>
 </head>
 <body>
 
-<header>
+<header id="header">
   <a href="#" class="logo">Pedro</a>
-  <nav>
+  <span class="menu-btn" onclick="toggleMenu()">☰</span>
+
+  <nav id="menu">
     <a href="#inicio">Inicio</a>
     <a href="#sobre-mi">Sobre mí</a>
     <a href="#portafolio">Portafolio</a>
@@ -260,6 +306,20 @@
 <footer>
   © 2025 Pedro — Estudiante de 4º ESO
 </footer>
+
+<script>
+  // menú móvil
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+
+  // header cambia al hacer scroll
+  window.addEventListener("scroll", () => {
+    const header = document.getElementById("header");
+    if (window.scrollY > 50) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
+  });
+</script>
 
 </body>
 </html>
